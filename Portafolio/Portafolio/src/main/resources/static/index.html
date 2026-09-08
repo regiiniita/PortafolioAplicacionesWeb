@@ -8,17 +8,21 @@
     <meta name="keywords" content="portafolio, ingeniero en software">
     <meta name="author" content="Regina Jiménez Meneses">
     <meta name="robots" content="index, follow">
-    <link rel="shortcut icon" href="changuillo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="imagenes/icon.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-    <h1>Regina Jiménez Meneses</h1>
-    <p>Ingeniera en Software | Estudiante | Apasionada en el Software | Cinefila</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="hobbies.html">Hobbies</a>
-    </nav>
-    <nav>
+    <h1 id="nombre">Regina Jiménez Meneses</h1>
+    <div class="contenedor-descriptivos">
+        <p id="descriptivos">Ingeníera en Software | Estudiante del Instituto Tecnólogico de Sonora | Fanática del Cine | Cantante No Profesional </p>
+        <nav id="navegador">
+            <a href="index.html"><img src="imagenes/home.jpg"></a>
+            <a href="hobbies.html"><img src="imagenes/hobbie.jpg"></a>
+        </nav>
+    </div>
+    <nav id="secciones">
         <a href="#sobre-mi">Sobre mi</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#formacion">Formacion</a>
@@ -29,54 +33,75 @@
 </header>
 <main>
     <section id="sobre-mi">
-        <h2>Sobre mi</h2>
-        <p>Hola, soy <strong> Ingeniera en SOFTWARE</strong> con muchas ganas de aprender.</p>
-        <img src="imagenes/yo.jpeg" alt="Foto de Eva la primera mujer del mundo" width="300">
+        <h2 class="seccion">Sobre mi</h2>
+        <p id="texto">Hola, mi nombre es Regina y soy <strong> Ingeníera en SOFTWARE</strong> con muchas ganas de aprender mas sobre el <em>Software</em>.</p>
+        <div class="fotos-regina">
+        <img src="imagenes/foto3.jpeg" alt="Foto de Eva la primera mujer del mundo" width="300">
+        <img src="imagenes/foto4.jpeg" alt="Foto de Eva la primera mujer del mundo" width="300">
+        </div>
     </section>
     <section id="habilidades">
-        <h2>Habilidades</h2>
+        <h2 class="seccion">Habilidades</h2>
         <ul>
             <li>Programacion Orientada a Objetos</li>
             <li>Analisis de Algoritmos</li>
-            <li>Redes</li>
-        </ul>
-
-        <ul>
-            <li>Java</li>
-            <li>C++</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
+            <li>Matematicas Computacionales</li>
+            <li>Estructura de Datos</li>
+            <li>Bases de Datos</li>
+            <li>Diseño de Software</li>
         </ul>
     </section>
     <section id="formacion">
-        <h2>Formacion y experiencia</h2>
-        <h3>Pasos para crear una App Web</h3>
-        <ol>
-            <li>Analisis de requerimientos</li>
-            <li>Diseño de la solucion</li>
-            <li>Desarrollo y codificacion</li>
-            <li>Pruebas y despliegue</li>
-        </ol>
-    </section>
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <h3>Proyecto Integrador de Software</h3>
+        <h2 class="seccion">Formacion y experiencia</h2>
+        <h3>Forme parte de las instructoras el campamento <strong>"Patrones Hermosos"</strong> en el verano de 2025</h3>
         <ul>
-            <li>Tienda en linea</li>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>js</li>
-            </ol>
+            <li>Enseñamos Html</li>
+            <li>Convivimos en armonía</li>
+            <li>Empoderamos niñas</li>
+            <li>Nos divertimos!</li>
         </ul>
-        <a href="https://github.com/regiiniita?tab=repositories" target="_blank">ver repositorio de github</a>
+
+    </section>
+    <img id="patrones" src="imagenes/patrones.jpeg " width="300" >
+    <section id="proyectos">
+        <h2 class="seccion">Proyectos</h2>
+        <div id="proyectos-contenedor">
+        <h3>Proyecto Realizados a lo largo de la carrera</h3>
+        <ol>
+            <li>Spotify Fake</li>
+            <ul>
+                <li>Python</li>
+            </ul>
+            <li>Restaurante - LePusse</li>
+            <ul>
+                <li>Java</li>
+                <li>Java Swing</li>
+                <li>MySQL</li>
+            </ul>
+            <li>Panaderia - LAPANADERIA</li>
+            <ul>
+                <li>Java</li>
+                <li>Java Swing</li>
+                <li>MongoDB</li>
+            </ul>
+            <li>Mapa de un Estado de la República</li>
+            <ul>
+                <li>Java</li>
+                <li>Java Swing</li>
+                <li>Analisis De Datos</li>
+            </ul>
+
+        </ol>
+         <h4> Puedes visitar mi perfil de GitHub y ver mis proyectos: </h4>
+        <a href="https://github.com/regiiniita?tab=repositories" target="_blank"><img src="imagenes/githubPink.jpg"></a>
+        </div>
     </section>
     <section id="contacto">
-        <h2>Contacto</h2>
+        <h2 class="seccion">Contacto</h2>
         <p>Puedes contactarme en los siguientes canales</p>
-        <a href="mailto:regina.jimenez262705@potros.itson.edu.mx">regina.jimenez262705@potros.itson.edu.mx</a>
-        <a href="tel:+526442491867">+52 6442491867</a>
-        <a href="https://wa.me/526442491867"> Manda wha:+52 6442491867</a>
+        <a href="mailto:regina.jimenez262705@potros.itson.edu.mx"><img src="imagenes/correo.jpg"></a>
+        <a href="tel:+526442491867"><img src="imagenes/telefono.jpg"></a>
+        <a href="https://wa.me/526442491867"> <img src="imagenes/whatsapp.jpg"></a>
     </section>
 </main>
 <footer>
